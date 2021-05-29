@@ -1,0 +1,631 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Rafaella Caetano Gomes</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="edf44130-8bc2-469b-ac77-c5c82261ae7a" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1598300188904-6287d52746ad?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">👩🏻‍⚕️</span></div><h1 class="page-title">Rafaella Caetano Gomes</h1></header><div class="page-body"><blockquote id="c19803d1-5b85-4c9f-bc92-c3669563466a" class="">Sou Biomédica Esteta graduada pela Universidade do Extremo Sul Catarinense (UNESC) no ano de 2020. Resido na cidade de Içara e possuo 11 meses de experiência profissional no ramo da estética.</blockquote><h1 id="65443c32-c5f8-485f-8238-9f87c316b427" class="">☎️ Informações para contato</h1><p id="64f5865e-86a3-460f-bde6-2c2ac35453d8" class="">📧 rafaellacgomes@hotmail.com</p><p id="53389f17-cd81-424b-a8ae-2b07adbc1266" class="">☎️ (48) 99964-2691</p><p id="78a0a4d9-63f1-41fb-9d9c-866900a175a5" class="">@rafagomes6</p><hr id="199fffbf-0d51-489b-9d9c-8b2f6e05bd36"/><h1 id="8cb4f6a3-28ea-40c1-aec3-cbabad8b6051" class=""><strong>👩🏻‍💻</strong> Experiências profissionais</h1><h2 id="385352d5-9747-4704-8a70-b03138e42e8b" class="">Biomédica esteta</h2><p id="a968d7aa-2cba-4b11-ba16-05badf5517cb" class="block-color-gray">Emagrecentro<em>, Criciúma,SC – (12/2020 ~ Atual)</em></p><p id="90d70b31-d569-49d9-bf90-d7bf329d6c74" class="">Admitida após o período de estágio, realizo no dia a dia os procedimentos: Emagrecimento, Radiofrequência, Manthus, Carboxterapia, Lipoenzimática, Intradermoterapia, Lipo de papada, Toxina Botulínica, Microagulhamento, Limpeza de pele (realizado poucas vezes). Também atuo juntamente com setor de vendas, também realizando-as através de avaliações e renovações de planos e pacotes.</p><h2 id="fabcaed6-10ac-45ed-979f-40de2454b4c9" class="">Estagiária</h2><p id="b77d8843-40e7-4924-b3d0-b8ff971b48fd" class="block-color-gray">Emagrecentro<em>, Criciúma,SC – (08/2020 ~ 11/2020)</em></p><p id="f5ba7120-e99f-4b67-85f9-ed80e0c41dd9" class="">Estágio obrigatório pelo curso de Biomedicina da UNESC, onde eram realizados todos os procedimentos com supervisão de funcionários da clínica. Período de grande aprendizado profissional onde foi desenvolvidas habilidades interpessoais e técnicas que colaboraram para futura admissão.</p><h2 id="66a392a6-6835-4e63-a328-adb66a3311e5" class="">Auxiliar de escritório</h2><p id="4d8980d0-6b6d-40fd-b3aa-34da27638c5c" class="block-color-gray">Vipcel<em>, Criciúma,SC – (06/2019 ~ 11/2020)</em></p><p id="6dd3cf65-51c8-4536-b89f-30dec3cbe65d" class="">Contratada pelo meu irmão para auxiliar sem serviços administrativos e rotinas de agendamento e cadastramento de clientes em sistema. Desenvolvi habilidades com sistemas de tecnologias da informação e também aprendi a utilizar o Microsoft Excel. Por conta do horário de trabalho após admissão na Emagrecentro não pude mais atuar nas atividades da empresa.</p><hr id="a76e32c5-a40c-42f0-910a-ded6a23ed2e8"/><h1 id="999ceb71-d4de-4593-aed2-df547fb9b544" class="">🛠 Técnicas</h1><h2 id="32cce970-a56a-47e4-b6ca-71250e15443f" class="">💻 Estética</h2><h3 id="93cfb0a6-3dd0-4fd8-9d89-387cf33e5649" class="">Radiofrequência </h3><p id="5c643cb0-d530-4595-8c76-fd99f5277194" class="">Habilidade aprendida durante o estágio obrigatório, função realizada em torno de 5 vezes na semana, realizado tanto para facial quanto corporal. Aprendido com facilidade. Parte teorica aprendida também no curso Radiofrequência: corporal e facial da plataforma esteticaexpert.</p><h3 id="3fdf939e-542b-4cb8-a354-e93c1314cd12" class="">Manthus </h3><p id="e121a824-2b2b-47a8-8114-1fb5d35fa20b" class="">Habilidade aprendida durante o estágio obrigatório, função realizada em torno de 3 vezes na semana, realizado tanto para facial quanto corporal. Aprendido com facilidade.</p><h3 id="cdf2cd69-5dfd-4203-b3d2-247416a99bfe" class="">Carboxiterapia </h3><p id="c94875bf-42f2-4818-8858-00d10cff536e" class="">Habilidade aprendida durante o estágio obrigatório, juntamente com o curso de carboxiterapia da plataforma esteticaexpert. Procedimento não tem muita demanda.</p><h3 id="6a25ac49-1fca-4689-a367-d75009fbd3c6" class="">Lipoenzimática, Intradermoterapia e Lipo de papada </h3><p id="69401a1b-c432-483b-a09d-9fe0a19c0b4f" class="">Habilidade aprendida durante o estágio obrigatório, função realizada em torno de  15 vezes na semana, realizado tanto para facial quanto corporal. Aprendido com facilidade, domínio grande das técnicas.</p><h3 id="caf0fd35-39f7-492f-adf6-8ee88bafa64e" class="">Toxina Botulínica </h3><p id="cc2068d6-e172-4126-aeb0-6e49405e2e25" class="">Habilidade aprendida durante os cursos:</p><p id="3e37877a-44cb-4dce-b52c-3a6c4bd961c8" class="">Toxina botulínica realizado 04/2021 ministrado por Elisa da Rolt;</p><p id="4c581adb-9fe2-46bf-8acf-007d8003b00d" class="">Curso básico de Toxina Botulínica e Preenchedores facial realizado 04/2021, ministrado por Isabella Mota.</p><h3 id="952246e0-4f28-4307-9161-51e491f16b39" class="">Microagulhamento </h3><p id="b6dd7ec4-20c2-4df0-b47f-1a234515027c" class="">Habilidade aprendida durante o estágio obrigatório, função realizada em torno de 1 vezes na semana.</p><h3 id="12b8e967-e6fc-40f6-9674-128775b9d969" class="">Limpeza de Pele </h3><p id="c7bb66d1-f492-46af-889a-8ad925e89f1b" class="">Habilidade aprendida durante o estágio obrigatório, função realizada poucas vezes, não tendo muito domínio da técnica.</p><p id="fdba4b44-7b2f-4cdd-961d-e42ec50b4f70" class="">
+</p><hr id="7fd6f771-26b3-479e-b9fe-a217a8ce51d1"/><h1 id="71ed4bf8-d8f2-41a6-89d8-157fd2e6d601" class="">📚 Cursos</h1><h2 id="46cf961c-0b0c-431d-8fa4-3a77e9db8d29" class="">Radiofrequência corporal e facial / Carboxiterapia aplicada a estética</h2><p id="d3a4f24e-59e6-451c-a50b-9cdc2367154a" class="block-color-gray">10/2020<em> Plataforma Estética Expert (Online)</em></p><p id="3273ae4a-54cd-40b0-8da6-ea51f0d6c088" class="">Curso interessante com bom referencial teórico agregando conhecimentos básicos na área de estética.</p><ul id="024afcdf-c4d5-4525-a3a6-1d30f6d7101c" class="toggle"><li><details open=""><summary><strong>Clique aqui para ver os certificados</strong></summary><figure id="5e901e6e-8f22-45b3-8955-7db1d50e03f4" class="image"><a href="Rafaella%20Caetano%20Gomes%205e901e6e8f2245b389557db1d50e03f4/Untitled.png"><img style="width:802px" src="Rafaella%20Caetano%20Gomes%205e901e6e8f2245b389557db1d50e03f4/Untitled.png"/></a></figure><figure id="6fcf36c1-1294-4026-8232-61b8c306dd8a" class="image"><a href="Rafaella%20Caetano%20Gomes%205e901e6e8f2245b389557db1d50e03f4/Untitled%201.png"><img style="width:801px" src="Rafaella%20Caetano%20Gomes%205e901e6e8f2245b389557db1d50e03f4/Untitled%201.png"/></a></figure></details></li></ul><h2 id="8f24122d-6252-4357-96d9-252138d9c9ec" class="">Intensivo 30 dias Carla Leone</h2><p id="47e09073-a22d-4976-8bb3-c5019978c4ea" class="block-color-gray">03/2020<em> Plataforma Estética Expert (Online)</em></p><p id="e663d208-7441-4359-bf3e-5a65766533ec" class="">Curso interessante com bom referencial teórico agregando conhecimentos básicos em alterações estéticas e melhores procedimentos para se obter resultado.</p><h2 id="9b65a201-9197-4ce1-89e6-47b4eb0be009" class="">Toxina Botulínica</h2><p id="b50aa8d6-8947-4e91-ad83-2277be69eeb0" class="block-color-gray">04/2021</p><p id="292171b7-8c0e-4ba5-9bbf-4a5aab59de2e" class="">Curso com aulas teóricas e práticas.</p><h2 id="cf11f8c4-68fc-468e-b2b2-d2595168b587" class="">Curso básico de Toxina Botulínica e Preenchedores Faciais</h2><p id="6501d7bc-a202-4b8a-8224-31e41900b015" class="block-color-gray">04/2021</p><p id="ac198692-25b4-47af-bf53-8974e46fb021" class="">Curso com aulas teóricas e práticas.</p><h2 id="78fbb14d-94a3-4e1d-ae4f-422f085ce0f5" class="">Congresso EstetiSummit</h2><p id="c70bc1a1-51fd-414c-9021-8568309a5a07" class="block-color-gray">09/2020</p><p id="41b663bf-feb2-4bd7-b9e2-254d8d0b1101" class="">Congresso abrangeu procedimentos estéticos adequados para cada queixa, intercorrências e teoria e prática de procedimentos estéticos.</p><p id="3c7bc92a-193e-45ab-a473-c3bb073f866e" class="">
+</p><p id="503fe861-05de-41f0-84be-719ac39d22e8" class="">
+</p></div></article></body></html>
